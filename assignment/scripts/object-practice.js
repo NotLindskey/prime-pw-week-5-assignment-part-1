@@ -1,33 +1,39 @@
-console.log('***** Object Practice *****')
+console.log("***** Object Practice *****");
 
 // Add the required code to complete the tasks below
 
 /* 1. Create an object literal to represent you!
-  - Give the object a 'firstName & (separate) 'lastName' property
-  - Give it a boolean 'hasSiblings' property
+  x- Give the object a 'firstName & (separate) 'lastName' property
+  x- Give it a boolean 'hasSiblings' property
   - Give it  a numeric 'shoeCount' property
   - Also give it an array 'favThreeFoods'
 */
 const me = {
-  // TODO - add properties here
+	firstName: "Linssi",
+	lastName: "Colin Ruiz",
+	hasSiblings: true,
+	shoeCount: 5,
+	favThreeFoods: ["tacos", "ice cream", "pozole", "hotpot"],
+	// TODO - add properties here
 };
-console.log('A little about me:', me);
+console.log("A little about me:", me);
 
-/* 2. Accessing object properties.
+/* x - 2. Accessing object properties.
   - Create a variable called fullName 
   - Use the firstName & lastName properties of the object you 
     created above to set its value. 
   - Console.log fullName
 */
 
-
+let fullName = me.firstName + " " + me.lastName;
+console.log(fullName);
 
 /* 3. Nested arrays
   - Console.log your first favorite food
   - Console.log your last favorite food 
 */
-
-
+console.log(me.favThreeFoods[0]);
+console.log(me.favThreeFoods[2]);
 
 /* 4. Change a property of an existing object.
   - Console.log your current shoe count.
@@ -36,6 +42,9 @@ console.log('A little about me:', me);
   - Console.log your updated shoe count. 
 */
 
+console.log(me.shoeCount);
+let shoeCount = me.shoeCount + 1;
+console.log(shoeCount);
 
 /* 5. Add a new property to an existing object.
   - Add a 'favoriteColor' to your existing object
